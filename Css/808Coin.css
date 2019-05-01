@@ -1,0 +1,1019 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #323232;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.2vw;
+}
+
+ul, li
+{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    transition-duration: 1s;
+}
+
+input[type=text]
+{
+    outline: none;
+    font-size: 1.2vw;
+}
+
+.button
+{
+    background-image: linear-gradient(to right, #be86fd 10%, #5efdfa 90%);
+    padding: 15px 20px;
+    border-radius: 3px;
+    position: absolute;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.4vw;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+    transition-duration: 1s;
+}
+
+    .button:hover, .upper .submitBtn:hover
+    {
+        color: #fff;
+        background-image: linear-gradient(to bottom, #e89dff 0%, #b765d0 100%);
+    }
+
+    .button a
+    {
+        color: #323232;
+    }
+
+    .button:hover a
+    {
+        color: #fff;
+    }
+
+.wrapper
+{
+    padding: 0;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.partEle
+{
+    margin: 0 auto;
+    position: relative;
+}
+
+.partContainer
+{
+}
+
+.partHead
+{
+    text-transform: uppercase;
+    padding: 2vw 0 1vw 0;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.headText
+{
+    font-size: 1.8vw;
+    padding: 0.5vw;
+}
+
+.headUp
+{
+    height: 3px;
+    background-image: linear-gradient(to right, #be86fd 0%, #5efdfa 100%);
+}
+
+.headDown
+{
+    height: 3px;
+    background-image: linear-gradient(to right, #5efdfa 0%, #be86fd 100%);
+}
+
+.partDesc
+{
+    font-size: 1.4vw;
+    color: #666;
+}
+
+.partContent
+{
+    position: relative;
+    text-align: center;
+}
+
+/*Menu*/
+.menu
+{
+    width: 100%;
+    z-index: 5;
+    position: fixed !important;
+    top: 0 !important;
+    height: 6vw;
+    background-color: rgba(240,240,240,0.8) !important;
+}
+
+    .menu .logo
+    {
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url('../Images/headlogo.png');
+        width: 100px;
+        position: absolute;
+        top: 0;
+        left: 10%;
+    }
+
+    .menu ul
+    {
+        width: 80%;
+        padding: 0 10%;
+        height: 100%;
+        text-align: center;
+    }
+
+        .menu ul li
+        {
+            display: inline-block;
+        }
+
+            .menu ul li.text
+            {
+                height: 6vw;
+                width: 11%;
+            }
+
+                .menu ul li.text a
+                {
+                    display: block;
+                    white-space: nowrap;
+                    font-size: 1.2vw;
+                    text-decoration: none;
+                    color: #323232;
+                    margin: 19% 0;
+                    transition-duration: 1s;
+                    background: #efefef;
+                    border-radius: 20px;
+                    padding: 3% 2%;
+                    cursor: pointer;
+                }
+
+                    .menu ul li.text a:hover
+                    {
+                        background: #c971e2;
+                        color: #fff;
+                        font-weight: 500;
+                    }
+
+            .menu ul li.language
+            {
+            }
+/*Banner*/
+.banner
+{
+    margin-top: 6vw;
+    width: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../Images/808banner.jpg');
+    height: 35vw;
+}
+
+.bannerCon
+{
+    height: 100%;
+    width: 100%;
+}
+
+.par-anim
+{
+}
+
+.middlebass
+{
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../Images/middlebass.png');
+    height: 14.5vw;
+    width: 14.5vw;
+    position: absolute;
+    left: 43%;
+    top: 18%;
+    animation: 2s infinite beatHeart;
+    transform-origin: center;
+}
+
+@keyframes beatHeart
+{
+    0%
+    {
+        transform: scale(1);
+    }
+
+    40%
+    {
+        transform: scale(1);
+    }
+
+    55%
+    {
+        transform: scale(1.03);
+    }
+
+    65%
+    {
+        transform: scale(1);
+    }
+
+    80%
+    {
+        transform: scale(1.05);
+    }
+
+    100%
+    {
+        transform: scale(1);
+    }
+}
+
+.middle-logo
+{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+    .middle-logo .main-text
+    {
+        font-size: 35pt;
+        font-weight: 500;
+        background-image: linear-gradient(to right, #5efdfa 40%, #be86fd 60%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 0;
+    }
+
+    .middle-logo .main-slogan
+    {
+        color: #fff;
+        font-size: 20pt;
+        padding: 1%;
+        text-shadow: 0 2px 2px #000;
+    }
+
+.download-wallet
+{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 280px;
+}
+
+.download-wallet2
+{
+    position: absolute;
+    bottom: 130px;
+    left: 50px;
+    width: 280px;
+}
+
+.explorer
+{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+.typed-cursor
+{
+    display: inline-block;
+    color: #fff;
+}
+
+.typed-fade-out
+{
+    display: inline-block;
+    color: #fff;
+}
+/*Tech*/
+.technique
+{
+    height: 35vw;
+}
+
+    .technique .partContent
+    {
+        width: 80%;
+        margin: 4vw auto;
+    }
+
+    .technique .contentItem
+    {
+        width: 32%;
+        display: inline-block;
+        vertical-align: text-top;
+        padding: 4vw 0;
+    }
+
+        .technique .contentItem .head
+        {
+            top: 0;
+            width: 100%;
+            text-align: center;
+            font-weight: 500;
+            font-size: 1.8vw;
+        }
+
+        .technique .contentItem .desc
+        {
+            padding: 2vw;
+            font-size: 1.4vw;
+        }
+
+.leftPart
+{
+}
+
+.middlePart
+{
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient( to bottom, #be86fd, #5efdfa ) 1 100%;
+}
+
+.rightPart
+{
+}
+
+/*Spec*/
+.specifications
+{
+    height: 40vw;
+}
+
+.darkUp
+{
+    width: 40%;
+    -webkit-clip-path: polygon(0 0, 0 70%, 100% 70%);
+    clip-path: polygon(0 0, 0 70%, 100% 70%);
+    background-image: linear-gradient(45deg, #828282 0%, #4a4949 100%);
+    height: 100%;
+    position: absolute;
+}
+
+.darkDown
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 30%;
+    width: 40%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+    background-image: linear-gradient(to bottom, #4a4949 0%, #828282 100%);
+}
+
+.colorUp
+{
+    position: absolute;
+    bottom: 30%;
+    left: 0;
+    height: 40%;
+    width: 100%;
+    background-image: linear-gradient(to right, #83e3fc 0%, #ed99fe 100%);
+}
+
+.colorDown
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 30%;
+    width: 100%;
+    background-image: linear-gradient(to right, #84c4e3 0%, #d889e5 100%);
+}
+
+.coin
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 35vw;
+    width: 35vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../Images/Coin.png');
+}
+
+.platformCon
+{
+}
+
+    .platformCon .head
+    {
+        position: absolute;
+        top: 35%;
+        right: 12%;
+        font-size: 3vw;
+        font-weight: 500;
+        background-image: linear-gradient(to right, #f4cdff 10%, #affdfc 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 5px 5px rgba(150,150,150,0.3);
+    }
+
+.platforms
+{
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    width: 60%;
+}
+
+.platformItem
+{
+    width: 24%;
+    display: inline-block;
+}
+
+
+    .platformItem .name
+    {
+        padding: 2vw 0;
+    }
+
+    .platformItem .logo
+    {
+        height: 12vw;
+        transform: scale(0.9);
+        cursor: pointer;
+        transition-duration: 1s;
+    }
+
+        .platformItem .logo:hover
+        {
+            transform: scale(1.1);
+        }
+
+.mac
+{
+    background-repeat: no-repeat;
+    background-image: url('../Images/mac.png');
+    background-position: center;
+    background-size: contain;
+}
+
+.window
+{
+    background-repeat: no-repeat;
+    background-image: url('../Images/window.png');
+    background-position: center;
+    background-size: contain;
+}
+
+.android
+{
+    background-repeat: no-repeat;
+    background-image: url('../Images/android.png');
+    background-position: center;
+    background-size: contain;
+}
+
+.ios
+{
+    background-repeat: no-repeat;
+    background-image: url('../Images/ios.png');
+    background-position: center;
+    background-size: contain;
+}
+/*Roadmap*/
+
+.roadmap
+{
+    height: 50vw;
+}
+
+    .roadmap .partDesc
+    {
+        width: 50%;
+        padding: 1% 25%;
+    }
+
+.timelineCon
+{
+    width: 100%;
+    position: relative;
+    height: 26vw;
+    margin-top: 5vw;
+}
+
+.leftArr
+{
+    width: 5%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url('../Images/leftarr.png');
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    cursor: pointer;
+    left: 3%;
+    z-index: 5;
+}
+
+.rightArr
+{
+    width: 5%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url('../Images/rightarr.png');
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    cursor: pointer;
+    right: 3%;
+    z-index: 5;
+}
+
+.mainTimeline
+{
+    width: 90%;
+    margin: 0 5%;
+    height: 100%;
+    overflow-x: auto;
+    position: absolute;
+    overflow-y: hidden;
+}
+
+.timelineItem
+{
+    width: 25vw;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.timelineContainer
+{
+    width: 1800px;
+    height: 100%;
+    float: left;
+}
+
+
+.middle
+{
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background-image: linear-gradient(to bottom, #affdfc 10%, #f4cdff 90%);
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #f4cdff;
+    position: relative;
+    margin: 0 auto;
+    top: -54%;
+}
+
+.type1 .upper
+{
+    height: 50%;
+    position: relative;
+    border-bottom: solid 2px #ec9aff;
+}
+
+    .type1 .upper .text
+    {
+        top: 20%;
+        position: absolute;
+        width: 100%;
+    }
+
+    .type1 .upper .ver-line
+    {
+        height: 40%;
+        width: 1px;
+        background-color: #000;
+        position: relative;
+        margin: 0 auto 0 auto;
+        top: 60%;
+    }
+
+.type1 .lower
+{
+    height: 50%;
+    position: relative;
+    border-top: solid 2px #ec9aff;
+}
+
+    .type1 .lower div
+    {
+        position: relative;
+        border-radius: 50%;
+        background-image: linear-gradient(to bottom, #affdfc 10%, #f4cdff 90%);
+        font-weight: 500;
+        width: 8vw;
+        height: 4.5vw;
+        margin: 3vw auto 0 auto;
+        padding-top: 3.5vw;
+    }
+
+.type2 .upper
+{
+    height: 50%;
+    position: relative;
+    border-bottom: solid 2px #ec9aff;
+}
+
+    .type2 .upper div
+    {
+        position: relative;
+        border-radius: 50%;
+        background-image: linear-gradient(to bottom, #affdfc 10%, #f4cdff 90%);
+        font-weight: 500;
+        width: 8vw;
+        height: 4.5vw;
+        margin: 0 auto 3vw auto;
+        padding-top: 3.5vw;
+    }
+
+.type2 .lower .text
+{
+    position: absolute;
+    width: 100%;
+    bottom: 20%;
+}
+
+.type2 .lower .ver-line
+{
+    height: 40%;
+    width: 1px;
+    background-color: #000;
+    position: relative;
+    margin: 0 auto 0 auto;
+}
+
+.type2 .lower
+{
+    height: 50%;
+    position: relative;
+    border-top: solid 2px #ec9aff;
+}
+
+/*Team*/
+
+.team
+{
+    height: 60vw;
+}
+
+.teamLayout
+{
+    -webkit-clip-path: polygon(0 0, 0 35%, 15% 50%, 0 66%, 0 100%, 50% 100%, 100% 100%, 100% 68%, 85% 50%, 100% 35%, 100% 0, 50% 30%);
+    clip-path: polygon(0 0, 0 35%, 15% 50%, 0 66%, 0 100%, 50% 100%, 100% 100%, 100% 68%, 85% 50%, 100% 35%, 100% 0, 50% 30%);
+    background-image: linear-gradient(135deg, #ec9aff 20%, #75edfa 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.teamLayoutCurve
+{
+    -webkit-clip-path: ellipse(50% 7% at 50% 100%);
+    clip-path: ellipse(50% 80% at 50% 100%);
+    background-color: #fff;
+    width: 100%;
+    height: 16vw;
+    bottom: 0;
+    position: absolute;
+}
+
+.teamCon
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.teamItem
+{
+    width: 15.5vw;
+    height: 15.5vw;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+    position: absolute;
+    padding: 0.5vw;
+}
+
+    .teamItem .userCon
+    {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 50%;
+        cursor: pointer;
+        position: relative;
+    }
+
+        .teamItem .userCon img
+        {
+            width: 100%;
+            height: auto;
+            transition-duration: 1s;
+        }
+
+        .teamItem .userCon:hover img
+        {
+            transform: scale(1.2);
+        }
+
+        .teamItem .userCon .userdesc
+        {
+            width: 100%;
+            height: 10%;
+            color: #fff;
+            background-color: rgba(0,0,0,0.3);
+            position: absolute;
+            transition-duration: 1s;
+            bottom: 0;
+            padding: 10% 0;
+            text-align: center;
+            font-weight: 700;
+            opacity: 0;
+        }
+
+        .teamItem .userCon:hover .userdesc
+        {
+            opacity: 1;
+        }
+
+.pos1
+{
+    top: 5%;
+    left: 10%;
+}
+
+.pos2
+{
+    top: 21%;
+    left: 39%;
+    height: 20vw;
+    width: 20vw;
+}
+
+.pos3
+{
+    top: 5%;
+    right: 10%;
+}
+
+.pos4
+{
+    top: 40%;
+    left: 18%;
+}
+
+.pos5
+{
+    top: 40%;
+    right: 18%;
+}
+
+
+/*Exchanges*/
+
+.exchanges
+{
+    height: 40vw;
+    margin-top: -10vw;
+}
+
+@media screen and (max-width:480px)
+{
+    .exchanges
+    {
+        height: 55vw;
+        margin-top: -10vw;
+    }
+}
+
+@media screen and (max-width:860px)
+{
+    .exchanges
+    {
+        height: 50vw;
+        margin-top: -10vw;
+    }
+}
+
+.exchangeItem
+{
+    padding: 0 20%;
+    text-align: justify;
+}
+
+    .exchangeItem .logo
+    {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-image: url('../Images/wadax.png');
+        margin: 2vw 0;
+        height: 70px;
+    }
+
+    .exchangeItem .desc
+    {
+        padding: 3vw 0;
+        font-size: 1.2vw;
+    }
+
+    .exchangeItem .button
+    {
+        width: 20vw;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+    }
+
+/*Involved*/
+
+.involved
+{
+    height: 30vw;
+}
+
+.socialItem
+{
+    width: 18vw;
+    display: inline-block;
+    margin-top: 5vw;
+    cursor: pointer;
+    opacity: 0.7;
+    transition-duration: 1s;
+}
+
+    .socialItem:hover
+    {
+        transform: scale(1.3);
+        opacity: 1;
+    }
+
+
+    .socialItem .logo
+    {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 4vw;
+    }
+
+    .socialItem .discord
+    {
+        background-image: url('../Images/discord.png');
+    }
+
+    .socialItem .facebook
+    {
+        background-image: url('../Images/facebook.png');
+    }
+
+    .socialItem .twitter
+    {
+        background-image: url('../Images/twitter.png');
+    }
+
+    .socialItem .bitcointalk
+    {
+        background-image: url('../Images/bitcointalk.png');
+    }
+
+    .socialItem .desc
+    {
+        padding: 1vw;
+        font-size: 1.6vw;
+        font-weight: 500;
+    }
+
+/*Footer*/
+.ver-line{
+    display: none;
+}
+.mt-2{
+    display: inline-block;
+    margin-top: 50px;
+}
+.footer
+{
+    height: ;
+}
+
+    .footer .upper
+    {
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 5vw;
+    }
+
+.upper .subInput
+{
+    float: left;
+    border: none;
+    padding: 1vw;
+    width: 60%;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px #555;
+}
+
+.upper .submitBtn
+{
+    float: left;
+    border: none;
+    padding: 1vw;
+    width: 32%;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px #555;
+    text-transform: uppercase;
+    margin-left: 2%;
+    cursor: pointer;
+    font-size: 1.2vw;
+    background-image: linear-gradient(to right, #f297ff 10%, #5ffcfa 80%);
+    transition-duration: 1s;
+}
+
+.footer .lower
+{
+}
+
+.footer .head
+{
+    font-size: 16pt;
+    font-weight: 500;
+}
+
+.footer .level1
+{
+    padding: 4vw 10%;
+}
+
+    .footer .level1 > li
+    {
+        list-style: none;
+        display: inline-block;
+        width: 33%;
+        vertical-align: text-top;
+    }
+
+.footer .level2
+{
+    padding: 1vw 10%;
+}
+
+    .footer .level2 li
+    {
+        list-style: none;
+        float: left;
+        width: 100%;
+        text-align: left;
+    }
+
+.footerLayout
+{
+    background-image: linear-gradient(to bottom, #ea9bfe 0%, #9ed0fc 100%);
+    -webkit-clip-path: ellipse(80% 80% at 50% 80%);
+    clip-path: ellipse(80% 80% at 50% 80%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.copyright
+{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+.bigger
+{
+    color: #323232;
+    font-size: 2vw;
+    font-weight: 700;
+}
